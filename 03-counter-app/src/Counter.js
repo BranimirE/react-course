@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import PropTypes from 'prop-types';
 
-const Counter = ({start:value}) => {
+const Counter = ({start:value = 10}) => {
     const [count, setCount] = useState(value);
     const handleAdd = () => setCount(count + 1);
     const handleReset = () => setCount(value);
@@ -16,12 +16,9 @@ const Counter = ({start:value}) => {
     );
 };
 
-Counter.propTypes = {
+/* Counter.propTypes = {
     start: PropTypes.number.isRequired
-}
+} */
 
-// Counter.defaultProps = {
-//     start: 5
-// }
 
 export default Counter;
