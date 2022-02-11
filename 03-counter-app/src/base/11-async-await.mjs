@@ -3,8 +3,8 @@ import request  from 'request';
 export const getImagen = async() => {
 
     try {
-        const client_id = '45e315e8202f43299e0099082d318d94';
-        const client_secret = '885c98dc8c3e46e1b70d2690229e10e3';
+        const client_id = 'cliend_id_here';
+        const client_secret = 'client_secret_here';
         
         const authOptions = {
           url: 'https://accounts.spotify.com/api/token',
