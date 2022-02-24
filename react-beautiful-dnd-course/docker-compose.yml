@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  myproject:
+    image: myproject:1.0.0
+    build: 
+      context: .
+      dockerfile: Dockerfile2
+    ports:
+      - 8080:80
+    volumes:
+      - /home/branimir/configs:/home/configs/
+    environment:
+      - LOGLEVEL=debug
+
