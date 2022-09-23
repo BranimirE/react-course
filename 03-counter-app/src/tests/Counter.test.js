@@ -1,6 +1,5 @@
 import { shallow } from 'enzyme';
 import Counter from '../Counter';
-
 describe('Tests in Counter component', () => {
     let wrapper = shallow(<Counter />);
 
